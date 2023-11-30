@@ -11,31 +11,37 @@
 <body>
     <header class="container-fluid mb-4">
         <section class="row">
-            <div class="bg-dark col-1 playerCard">
+            <div class="bg-dark col-1 playerCard d-flex flex-column justify-content-center align-items-center">
                 <span class="text-light">
                     <h4 class="mb-3">Player: 🐺</h4>
                     <h5 class="d-flex">HP:<p id="playerHpOne" class="ms-1">0</p></h5>
                     <h5 class="d-flex">Damage: <p class="ms-1">5</p></h5>
                 </span>
             </div>
-            <div class="bg-dark col-1 playerCard">
+            <div class="bg-dark d-flex flex-column col-1 playerCard justify-content-center align-items-center">
                 <span class="text-light">
                     <h4 class="mb-3">Player: 🐺</h4>
                     <h5 class="d-flex">HP:<p id="playerHpTwo" class="ms-1">0</p></h5>
-                    <h5 class="d-flex">Damage: <p class="ms-1">5</p></h5>
+                    <h5 class="d-flex">Damage: <p class="ms-1">10</p></h5>
                 </span>
+            </div>
+            <div class="col-3">
+                <h2 class="d-flex m-4">Current Gold: <p id="current-gold" class="ms-2" ></p></h2>
             </div>
         </section>
     </header>
 
     <main class="container-fluid mb-4">
         <section class="row justify-content-center">
-            <div class="col-4 d-flex flex-column bg-dark-subtle justify-content-center p-3">
+            <div class="col-4 d-flex flex-column bg-dark-subtle justify-content-center align-items-center rounded-3 p-4">
                 <span class="d-flex fs-1 align-items-baseline">HP: <h3 id="bossHP" class="fs-1">0</h3></span>
+                <span class="d-flex fs-1 align-items-baseline mb-3">Level: <h3 id="boss-level" class="fs-1">1</h3></span>
+                <span class="d-flex fs-1 align-items-baseline">Reward: <h3 id="death-reward" class="fs-1" >20</h3></span>
                 <h2>Boss Man</h2>
-                <span onclick="attackBoss()" class="fs-1">🦑</span>
+                <span onclick="attackBoss()" id="boss-man" class="fs-1">🦑</span>
             </div>
         </section>
+        <button id="next-level" style="display: none;" onclick="levelUpBoss()">Next Level</button>
     </main>
     <footer class="container-fluid mt-5">
         <section class="row justify-content-between m-4">
