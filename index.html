@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="container-fluid mb-4">
+        <section class="row">
+            <div class="bg-dark col-1 playerCard">
+                <span class="text-light">
+                    <h4 class="mb-3">Player: 🐺</h4>
+                    <h5 class="d-flex">HP:<p id="playerHpOne" class="ms-1">0</p></h5>
+                    <h5 class="d-flex">Damage: <p class="ms-1">5</p></h5>
+                </span>
+            </div>
+            <div class="bg-dark col-1 playerCard">
+                <span class="text-light">
+                    <h4 class="mb-3">Player: 🐺</h4>
+                    <h5 class="d-flex">HP:<p id="playerHpTwo" class="ms-1">0</p></h5>
+                    <h5 class="d-flex">Damage: <p class="ms-1">5</p></h5>
+                </span>
+            </div>
+        </section>
+    </header>
+
+    <main class="container-fluid mb-4">
+        <section class="row justify-content-center">
+            <div class="col-4 d-flex flex-column bg-dark-subtle justify-content-center p-3">
+                <span class="d-flex fs-1 align-items-baseline">HP: <h3 id="bossHP" class="fs-1">0</h3></span>
+                <h2>Boss Man</h2>
+                <span onclick="attackBoss()" class="fs-1">🦑</span>
+            </div>
+        </section>
+    </main>
+    <footer class="container-fluid mt-5">
+        <section class="row justify-content-between m-4">
+            <div class="bg-dark col-4 p-2 text-light d-flex justify-content-evenly">
+                <div>
+                    <h2>Buy Heros</h2>
+                    <h3>Name: George</h3>
+                    <h3>Name: Kaleb</h3>
+                    <h3>Name: Phill</h3>
+                </div>
+                <div class="text-center">
+                    <h2>Hero Price:</h2>
+                    <h3>10</h3>
+                    <h3>10</h3>
+                    <h3>10</h3>
+                </div>
+            </div>
+            <div class="bg-dark resetButton">
+                <div class="text-light text-center align-items-center p-1">
+                    <h3>Reset</h3>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
